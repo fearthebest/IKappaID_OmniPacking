@@ -1,0 +1,171 @@
+VERSION = 1,
+
+option IKappaIDOmniPacking.WeightReductionPercent
+{
+    type = integer,
+    default = 17,
+    min = 0,
+    max = 90,
+    page = IKappaIDOmniPacking,
+    translation = IKappaIDOmniPacking_WeightReductionPercent,
+}
+
+option IKappaIDOmniPacking.SkillBookWeightReductionPercent
+{
+    type = integer,
+    default = 17,
+    min = 0,
+    max = 90,
+    page = IKappaIDOmniPacking,
+    translation = IKappaIDOmniPacking_SkillBookWeightReductionPercent,
+}
+
+option IKappaIDOmniPacking.LiteratureWeightReductionPercent
+{
+    type = integer,
+    default = 17,
+    min = 0,
+    max = 90,
+    page = IKappaIDOmniPacking,
+    translation = IKappaIDOmniPacking_LiteratureWeightReductionPercent,
+}
+
+option IKappaIDOmniPacking.FoodWeightReductionPercent
+{
+    type = integer,
+    default = 17,
+    min = 0,
+    max = 90,
+    page = IKappaIDOmniPacking,
+    translation = IKappaIDOmniPacking_FoodWeightReductionPercent,
+}
+
+option IKappaIDOmniPacking.HeavyItemExtraReductionPercent
+{
+    type = integer,
+    default = 0,
+    min = 0,
+    max = 50,
+    page = IKappaIDOmniPacking,
+    translation = IKappaIDOmniPacking_HeavyItemExtraReductionPercent,
+}
+
+option IKappaIDOmniPacking.HeavyItemWeightThreshold
+{
+    type = double,
+    default = 10.0,
+    min = 1.0,
+    max = 40.0,
+    page = IKappaIDOmniPacking,
+    translation = IKappaIDOmniPacking_HeavyItemWeightThreshold,
+}
+
+option IKappaIDOmniPacking.MinimumBundleWeight
+{
+    type = double,
+    default = 0.1,
+    min = 0.01,
+    max = 5.0,
+    page = IKappaIDOmniPacking,
+    translation = IKappaIDOmniPacking_MinimumBundleWeight,
+}
+
+option IKappaIDOmniPacking.PackTimeMultiplier
+{
+    type = integer,
+    default = 100,
+    min = 25,
+    max = 300,
+    page = IKappaIDOmniPacking,
+    translation = IKappaIDOmniPacking_PackTimeMultiplier,
+}
+
+option IKappaIDOmniPacking.UnpackTimeMultiplier
+{
+    type = integer,
+    default = 100,
+    min = 25,
+    max = 300,
+    page = IKappaIDOmniPacking,
+    translation = IKappaIDOmniPacking_UnpackTimeMultiplier,
+}
+
+option IKappaIDOmniPacking.EnableMaterialPacking
+{
+    type = boolean,
+    default = true,
+    page = IKappaIDOmniPacking,
+    translation = IKappaIDOmniPacking_EnableMaterialPacking,
+}
+
+option IKappaIDOmniPacking.EnableSkillBookPacking
+{
+    type = boolean,
+    default = true,
+    page = IKappaIDOmniPacking,
+    translation = IKappaIDOmniPacking_EnableSkillBookPacking,
+}
+
+option IKappaIDOmniPacking.EnableFoodPacking
+{
+    type = boolean,
+    default = true,
+    page = IKappaIDOmniPacking,
+    translation = IKappaIDOmniPacking_EnableFoodPacking,
+}
+
+option IKappaIDOmniPacking.EnableStackTier5
+{
+    type = boolean,
+    default = true,
+    page = IKappaIDOmniPacking,
+    translation = IKappaIDOmniPacking_EnableStackTier5,
+}
+
+option IKappaIDOmniPacking.EnableStackTier10
+{
+    type = boolean,
+    default = true,
+    page = IKappaIDOmniPacking,
+    translation = IKappaIDOmniPacking_EnableStackTier10,
+}
+
+option IKappaIDOmniPacking.EnableStackTier25
+{
+    type = boolean,
+    default = true,
+    page = IKappaIDOmniPacking,
+    translation = IKappaIDOmniPacking_EnableStackTier25,
+}
+
+option IKappaIDOmniPacking.EnableStackTier50
+{
+    type = boolean,
+    default = true,
+    page = IKappaIDOmniPacking,
+    translation = IKappaIDOmniPacking_EnableStackTier50,
+}
+
+option IKappaIDOmniPacking.EnableStackTier100
+{
+    type = boolean,
+    default = true,
+    page = IKappaIDOmniPacking,
+    translation = IKappaIDOmniPacking_EnableStackTier100,
+}
+
+option IKappaIDOmniPacking.RefreshBundlesOnSandboxChange
+{
+    type = boolean,
+    default = true,
+    page = IKappaIDOmniPacking,
+    translation = IKappaIDOmniPacking_RefreshBundlesOnSandboxChange,
+}
+
+option IKappaIDOmniPacking.SortPackingMenuByStackSize
+{
+    type = boolean,
+    default = true,
+    page = IKappaIDOmniPacking,
+    translation = IKappaIDOmniPacking_SortPackingMenuByStackSize,
+}

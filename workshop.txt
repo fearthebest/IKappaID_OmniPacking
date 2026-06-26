@@ -1,0 +1,5 @@
+version=1
+id=0
+title=IKappaID's Omni Packing (dev — not published)
+description=Bulk-pack vanilla materials, food, and skill books. Publish from Zomboid Workshop folder after sync_to_workshop.ps1.
+visibility=private

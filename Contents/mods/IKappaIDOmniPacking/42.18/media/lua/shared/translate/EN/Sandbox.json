@@ -1,0 +1,60 @@
+{
+    "Sandbox_IKappaIDOmniPacking": "IKappaID's Omni Packing",
+
+    "Sandbox_IKappaIDOmniPacking_WeightReductionPercent": "Material bundle weight reduction (%)",
+    "Sandbox_IKappaIDOmniPacking_WeightReductionPercent_tooltip": "How much lighter packed materials are (planks, nails, ore, and similar). At 50%, a bundle weighs half what the loose items would. You cannot pack a bundle inside another bundle.",
+
+    "Sandbox_IKappaIDOmniPacking_SkillBookWeightReductionPercent": "Skill book set weight reduction (%)",
+    "Sandbox_IKappaIDOmniPacking_SkillBookWeightReductionPercent_tooltip": "Weight reduction for one bundle that holds all five skill books (levels 1 through 5) for a skill. Can be different from materials.",
+
+    "Sandbox_IKappaIDOmniPacking_LiteratureWeightReductionPercent": "Books and magazines weight reduction (%)",
+    "Sandbox_IKappaIDOmniPacking_LiteratureWeightReductionPercent_tooltip": "Weight reduction when packing magazines, newspapers, books, comics, and other reading items.",
+
+    "Sandbox_IKappaIDOmniPacking_FoodWeightReductionPercent": "Food bundle weight reduction (%)",
+    "Sandbox_IKappaIDOmniPacking_FoodWeightReductionPercent_tooltip": "Weight reduction for packed food bundles (flour, rice, snacks, canned goods, and similar). Unpacking gives fresh loose items.",
+
+    "Sandbox_IKappaIDOmniPacking_HeavyItemExtraReductionPercent": "Extra reduction for heavy items (%)",
+    "Sandbox_IKappaIDOmniPacking_HeavyItemExtraReductionPercent_tooltip": "Added on top of material reduction when each single item is very heavy (logs, ore, anvils, generators). Total reduction from both settings cannot go above 90%.",
+
+    "Sandbox_IKappaIDOmniPacking_HeavyItemWeightThreshold": "Heavy item weight (kg)",
+    "Sandbox_IKappaIDOmniPacking_HeavyItemWeightThreshold_tooltip": "If one loose item weighs this much or more, it qualifies for the extra heavy-item reduction. Default is 10 kg.",
+
+    "Sandbox_IKappaIDOmniPacking_MinimumBundleWeight": "Minimum bundle weight (kg)",
+    "Sandbox_IKappaIDOmniPacking_MinimumBundleWeight_tooltip": "After reduction, bundles never weigh less than this. Keep low for seeds and small scrap; raise if you want to limit very light bundles.",
+
+    "Sandbox_IKappaIDOmniPacking_PackTimeMultiplier": "Packing time (%)",
+    "Sandbox_IKappaIDOmniPacking_PackTimeMultiplier_tooltip": "100 is normal speed. 50 is twice as fast. 200 is twice as slow. Applies when you load the game or change these settings.",
+
+    "Sandbox_IKappaIDOmniPacking_UnpackTimeMultiplier": "Unpacking time (%)",
+    "Sandbox_IKappaIDOmniPacking_UnpackTimeMultiplier_tooltip": "100 is normal speed. 50 is twice as fast. 200 is twice as slow. Applies when you load the game or change these settings.",
+
+    "Sandbox_IKappaIDOmniPacking_EnableMaterialPacking": "Allow packing materials",
+    "Sandbox_IKappaIDOmniPacking_EnableMaterialPacking_tooltip": "Turn off to remove pack and unpack recipes for material bundles. Bundles you already have stay in the world.",
+
+    "Sandbox_IKappaIDOmniPacking_EnableSkillBookPacking": "Allow packing skill books",
+    "Sandbox_IKappaIDOmniPacking_EnableSkillBookPacking_tooltip": "Turn off to remove recipes that bundle all five books for one skill into a single item.",
+
+    "Sandbox_IKappaIDOmniPacking_EnableFoodPacking": "Allow packing food",
+    "Sandbox_IKappaIDOmniPacking_EnableFoodPacking_tooltip": "Turn off to remove pack and unpack recipes for food bundles. Shelf-stable dry goods, snacks, spices, and sealed cans only.",
+
+    "Sandbox_IKappaIDOmniPacking_EnableStackTier5": "Allow x5 bundles",
+    "Sandbox_IKappaIDOmniPacking_EnableStackTier5_tooltip": "Show pack and unpack recipes that combine 5 loose items into one bundle.",
+
+    "Sandbox_IKappaIDOmniPacking_EnableStackTier10": "Allow x10 bundles",
+    "Sandbox_IKappaIDOmniPacking_EnableStackTier10_tooltip": "Show pack and unpack recipes that combine 10 loose items into one bundle.",
+
+    "Sandbox_IKappaIDOmniPacking_EnableStackTier25": "Allow x25 bundles",
+    "Sandbox_IKappaIDOmniPacking_EnableStackTier25_tooltip": "Show pack and unpack recipes that combine 25 loose items into one bundle.",
+
+    "Sandbox_IKappaIDOmniPacking_EnableStackTier50": "Allow x50 bundles",
+    "Sandbox_IKappaIDOmniPacking_EnableStackTier50_tooltip": "Show pack and unpack recipes that combine 50 loose items into one bundle.",
+
+    "Sandbox_IKappaIDOmniPacking_EnableStackTier100": "Allow x100 bundles",
+    "Sandbox_IKappaIDOmniPacking_EnableStackTier100_tooltip": "Show pack and unpack recipes that combine 100 loose items into one bundle.",
+
+    "Sandbox_IKappaIDOmniPacking_RefreshBundlesOnSandboxChange": "Update existing bundles when settings change",
+    "Sandbox_IKappaIDOmniPacking_RefreshBundlesOnSandboxChange_tooltip": "When on, bundles already in inventories get new weights after you change options here (may take a couple of seconds). Turn off if only new bundles should use new settings.",
+
+    "Sandbox_IKappaIDOmniPacking_SortPackingMenuByStackSize": "Sort pack menu by bundle size",
+    "Sandbox_IKappaIDOmniPacking_SortPackingMenuByStackSize_tooltip": "When on, right-click pack recipes are listed in order: x5, then x10, x25, x50, x100."
+}

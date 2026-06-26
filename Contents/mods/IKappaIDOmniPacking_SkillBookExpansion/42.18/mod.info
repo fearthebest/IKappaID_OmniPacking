@@ -1,0 +1,9 @@
+name=IKappaID's Omni Packing — Skill Book Expansion
+id=IKappaIDOmniPacking_SkillBookExpansion
+description=Optional addon: bundle Skill Book Expansion (3557111695) skill volumes 1-5 into IKOP slipcases with sandbox weight reduction. Enable with Omni Packing + Skill Book Expansion.
+author=IKappaID
+modversion=0.0.1
+versionMin=42.18
+require=IKappaIDOmniPacking;SkillBookExpansionB42
+category=Item
+tags=Build 42;QoL;Packing

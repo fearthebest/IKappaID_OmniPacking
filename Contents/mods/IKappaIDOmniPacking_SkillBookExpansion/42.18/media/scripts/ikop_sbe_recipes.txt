@@ -1,0 +1,466 @@
+module IKOP
+{
+
+    craftRecipe ikop_pack_books_sbe_axe
+    {
+        timedAction = PackingBox,
+        time = 100,
+        OnCreate = IKOP_RecipeCode.onCreateBulkPack,
+        OnTest = IKOP_RecipeCode.canPackLooseSkillBook,
+        Tags = InHandCraft;Packing,
+        category = Packing,
+        inputs
+        {
+            item 1 [SkillBookExpansionB42.BookAxe1] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 1 [SkillBookExpansionB42.BookAxe2] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 1 [SkillBookExpansionB42.BookAxe3] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 1 [SkillBookExpansionB42.BookAxe4] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 1 [SkillBookExpansionB42.BookAxe5] flags[AllowFavorite;InheritFavorite;IsExclusive],
+        }
+        outputs
+        {
+            item 1 IKOP.BookAxeSkillBundle,
+        }
+    }
+
+    craftRecipe ikop_unstack_books_sbe_axe
+    {
+        timedAction = UnPackBox,
+        time = 80,
+        Tags = InHandCraft;Packing;CanBeDoneInDark,
+        category = Packing,
+        inputs
+        {
+            item 1 [IKOP.BookAxeSkillBundle] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 SkillBookExpansionB42.BookAxe1,
+            item 1 SkillBookExpansionB42.BookAxe2,
+            item 1 SkillBookExpansionB42.BookAxe3,
+            item 1 SkillBookExpansionB42.BookAxe4,
+            item 1 SkillBookExpansionB42.BookAxe5,
+        }
+    }
+
+    craftRecipe ikop_pack_books_sbe_long_blunt
+    {
+        timedAction = PackingBox,
+        time = 100,
+        OnCreate = IKOP_RecipeCode.onCreateBulkPack,
+        OnTest = IKOP_RecipeCode.canPackLooseSkillBook,
+        Tags = InHandCraft;Packing,
+        category = Packing,
+        inputs
+        {
+            item 1 [SkillBookExpansionB42.BookBlunt1] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 1 [SkillBookExpansionB42.BookBlunt2] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 1 [SkillBookExpansionB42.BookBlunt3] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 1 [SkillBookExpansionB42.BookBlunt4] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 1 [SkillBookExpansionB42.BookBlunt5] flags[AllowFavorite;InheritFavorite;IsExclusive],
+        }
+        outputs
+        {
+            item 1 IKOP.BookBluntSkillBundle,
+        }
+    }
+
+    craftRecipe ikop_unstack_books_sbe_long_blunt
+    {
+        timedAction = UnPackBox,
+        time = 80,
+        Tags = InHandCraft;Packing;CanBeDoneInDark,
+        category = Packing,
+        inputs
+        {
+            item 1 [IKOP.BookBluntSkillBundle] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 SkillBookExpansionB42.BookBlunt1,
+            item 1 SkillBookExpansionB42.BookBlunt2,
+            item 1 SkillBookExpansionB42.BookBlunt3,
+            item 1 SkillBookExpansionB42.BookBlunt4,
+            item 1 SkillBookExpansionB42.BookBlunt5,
+        }
+    }
+
+    craftRecipe ikop_pack_books_sbe_short_blunt
+    {
+        timedAction = PackingBox,
+        time = 100,
+        OnCreate = IKOP_RecipeCode.onCreateBulkPack,
+        OnTest = IKOP_RecipeCode.canPackLooseSkillBook,
+        Tags = InHandCraft;Packing,
+        category = Packing,
+        inputs
+        {
+            item 1 [SkillBookExpansionB42.BookSmallBlunt1] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 1 [SkillBookExpansionB42.BookSmallBlunt2] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 1 [SkillBookExpansionB42.BookSmallBlunt3] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 1 [SkillBookExpansionB42.BookSmallBlunt4] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 1 [SkillBookExpansionB42.BookSmallBlunt5] flags[AllowFavorite;InheritFavorite;IsExclusive],
+        }
+        outputs
+        {
+            item 1 IKOP.BookSmallBluntSkillBundle,
+        }
+    }
+
+    craftRecipe ikop_unstack_books_sbe_short_blunt
+    {
+        timedAction = UnPackBox,
+        time = 80,
+        Tags = InHandCraft;Packing;CanBeDoneInDark,
+        category = Packing,
+        inputs
+        {
+            item 1 [IKOP.BookSmallBluntSkillBundle] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 SkillBookExpansionB42.BookSmallBlunt1,
+            item 1 SkillBookExpansionB42.BookSmallBlunt2,
+            item 1 SkillBookExpansionB42.BookSmallBlunt3,
+            item 1 SkillBookExpansionB42.BookSmallBlunt4,
+            item 1 SkillBookExpansionB42.BookSmallBlunt5,
+        }
+    }
+
+    craftRecipe ikop_pack_books_sbe_short_blade
+    {
+        timedAction = PackingBox,
+        time = 100,
+        OnCreate = IKOP_RecipeCode.onCreateBulkPack,
+        OnTest = IKOP_RecipeCode.canPackLooseSkillBook,
+        Tags = InHandCraft;Packing,
+        category = Packing,
+        inputs
+        {
+            item 1 [SkillBookExpansionB42.BookSmallBlade1] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 1 [SkillBookExpansionB42.BookSmallBlade2] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 1 [SkillBookExpansionB42.BookSmallBlade3] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 1 [SkillBookExpansionB42.BookSmallBlade4] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 1 [SkillBookExpansionB42.BookSmallBlade5] flags[AllowFavorite;InheritFavorite;IsExclusive],
+        }
+        outputs
+        {
+            item 1 IKOP.BookSmallBladeSkillBundle,
+        }
+    }
+
+    craftRecipe ikop_unstack_books_sbe_short_blade
+    {
+        timedAction = UnPackBox,
+        time = 80,
+        Tags = InHandCraft;Packing;CanBeDoneInDark,
+        category = Packing,
+        inputs
+        {
+            item 1 [IKOP.BookSmallBladeSkillBundle] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 SkillBookExpansionB42.BookSmallBlade1,
+            item 1 SkillBookExpansionB42.BookSmallBlade2,
+            item 1 SkillBookExpansionB42.BookSmallBlade3,
+            item 1 SkillBookExpansionB42.BookSmallBlade4,
+            item 1 SkillBookExpansionB42.BookSmallBlade5,
+        }
+    }
+
+    craftRecipe ikop_pack_books_sbe_spear
+    {
+        timedAction = PackingBox,
+        time = 100,
+        OnCreate = IKOP_RecipeCode.onCreateBulkPack,
+        OnTest = IKOP_RecipeCode.canPackLooseSkillBook,
+        Tags = InHandCraft;Packing,
+        category = Packing,
+        inputs
+        {
+            item 1 [SkillBookExpansionB42.BookSpear1] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 1 [SkillBookExpansionB42.BookSpear2] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 1 [SkillBookExpansionB42.BookSpear3] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 1 [SkillBookExpansionB42.BookSpear4] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 1 [SkillBookExpansionB42.BookSpear5] flags[AllowFavorite;InheritFavorite;IsExclusive],
+        }
+        outputs
+        {
+            item 1 IKOP.BookSpearSkillBundle,
+        }
+    }
+
+    craftRecipe ikop_unstack_books_sbe_spear
+    {
+        timedAction = UnPackBox,
+        time = 80,
+        Tags = InHandCraft;Packing;CanBeDoneInDark,
+        category = Packing,
+        inputs
+        {
+            item 1 [IKOP.BookSpearSkillBundle] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 SkillBookExpansionB42.BookSpear1,
+            item 1 SkillBookExpansionB42.BookSpear2,
+            item 1 SkillBookExpansionB42.BookSpear3,
+            item 1 SkillBookExpansionB42.BookSpear4,
+            item 1 SkillBookExpansionB42.BookSpear5,
+        }
+    }
+
+    craftRecipe ikop_pack_books_sbe_nimble
+    {
+        timedAction = PackingBox,
+        time = 100,
+        OnCreate = IKOP_RecipeCode.onCreateBulkPack,
+        OnTest = IKOP_RecipeCode.canPackLooseSkillBook,
+        Tags = InHandCraft;Packing,
+        category = Packing,
+        inputs
+        {
+            item 1 [SkillBookExpansionB42.BookNimble1] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 1 [SkillBookExpansionB42.BookNimble2] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 1 [SkillBookExpansionB42.BookNimble3] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 1 [SkillBookExpansionB42.BookNimble4] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 1 [SkillBookExpansionB42.BookNimble5] flags[AllowFavorite;InheritFavorite;IsExclusive],
+        }
+        outputs
+        {
+            item 1 IKOP.BookNimbleSkillBundle,
+        }
+    }
+
+    craftRecipe ikop_unstack_books_sbe_nimble
+    {
+        timedAction = UnPackBox,
+        time = 80,
+        Tags = InHandCraft;Packing;CanBeDoneInDark,
+        category = Packing,
+        inputs
+        {
+            item 1 [IKOP.BookNimbleSkillBundle] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 SkillBookExpansionB42.BookNimble1,
+            item 1 SkillBookExpansionB42.BookNimble2,
+            item 1 SkillBookExpansionB42.BookNimble3,
+            item 1 SkillBookExpansionB42.BookNimble4,
+            item 1 SkillBookExpansionB42.BookNimble5,
+        }
+    }
+
+    craftRecipe ikop_pack_books_sbe_sneaking
+    {
+        timedAction = PackingBox,
+        time = 100,
+        OnCreate = IKOP_RecipeCode.onCreateBulkPack,
+        OnTest = IKOP_RecipeCode.canPackLooseSkillBook,
+        Tags = InHandCraft;Packing,
+        category = Packing,
+        inputs
+        {
+            item 1 [SkillBookExpansionB42.BookSneaking1] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 1 [SkillBookExpansionB42.BookSneaking2] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 1 [SkillBookExpansionB42.BookSneaking3] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 1 [SkillBookExpansionB42.BookSneaking4] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 1 [SkillBookExpansionB42.BookSneaking5] flags[AllowFavorite;InheritFavorite;IsExclusive],
+        }
+        outputs
+        {
+            item 1 IKOP.BookSneakingSkillBundle,
+        }
+    }
+
+    craftRecipe ikop_unstack_books_sbe_sneaking
+    {
+        timedAction = UnPackBox,
+        time = 80,
+        Tags = InHandCraft;Packing;CanBeDoneInDark,
+        category = Packing,
+        inputs
+        {
+            item 1 [IKOP.BookSneakingSkillBundle] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 SkillBookExpansionB42.BookSneaking1,
+            item 1 SkillBookExpansionB42.BookSneaking2,
+            item 1 SkillBookExpansionB42.BookSneaking3,
+            item 1 SkillBookExpansionB42.BookSneaking4,
+            item 1 SkillBookExpansionB42.BookSneaking5,
+        }
+    }
+
+    craftRecipe ikop_pack_books_sbe_sprinting
+    {
+        timedAction = PackingBox,
+        time = 100,
+        OnCreate = IKOP_RecipeCode.onCreateBulkPack,
+        OnTest = IKOP_RecipeCode.canPackLooseSkillBook,
+        Tags = InHandCraft;Packing,
+        category = Packing,
+        inputs
+        {
+            item 1 [SkillBookExpansionB42.BookSprinting1] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 1 [SkillBookExpansionB42.BookSprinting2] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 1 [SkillBookExpansionB42.BookSprinting3] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 1 [SkillBookExpansionB42.BookSprinting4] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 1 [SkillBookExpansionB42.BookSprinting5] flags[AllowFavorite;InheritFavorite;IsExclusive],
+        }
+        outputs
+        {
+            item 1 IKOP.BookSprintingSkillBundle,
+        }
+    }
+
+    craftRecipe ikop_unstack_books_sbe_sprinting
+    {
+        timedAction = UnPackBox,
+        time = 80,
+        Tags = InHandCraft;Packing;CanBeDoneInDark,
+        category = Packing,
+        inputs
+        {
+            item 1 [IKOP.BookSprintingSkillBundle] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 SkillBookExpansionB42.BookSprinting1,
+            item 1 SkillBookExpansionB42.BookSprinting2,
+            item 1 SkillBookExpansionB42.BookSprinting3,
+            item 1 SkillBookExpansionB42.BookSprinting4,
+            item 1 SkillBookExpansionB42.BookSprinting5,
+        }
+    }
+
+    craftRecipe ikop_pack_books_sbe_lightfooted
+    {
+        timedAction = PackingBox,
+        time = 100,
+        OnCreate = IKOP_RecipeCode.onCreateBulkPack,
+        OnTest = IKOP_RecipeCode.canPackLooseSkillBook,
+        Tags = InHandCraft;Packing,
+        category = Packing,
+        inputs
+        {
+            item 1 [SkillBookExpansionB42.BookLightfooted1] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 1 [SkillBookExpansionB42.BookLightfooted2] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 1 [SkillBookExpansionB42.BookLightfooted3] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 1 [SkillBookExpansionB42.BookLightfooted4] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 1 [SkillBookExpansionB42.BookLightfooted5] flags[AllowFavorite;InheritFavorite;IsExclusive],
+        }
+        outputs
+        {
+            item 1 IKOP.BookLightfootedSkillBundle,
+        }
+    }
+
+    craftRecipe ikop_unstack_books_sbe_lightfooted
+    {
+        timedAction = UnPackBox,
+        time = 80,
+        Tags = InHandCraft;Packing;CanBeDoneInDark,
+        category = Packing,
+        inputs
+        {
+            item 1 [IKOP.BookLightfootedSkillBundle] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 SkillBookExpansionB42.BookLightfooted1,
+            item 1 SkillBookExpansionB42.BookLightfooted2,
+            item 1 SkillBookExpansionB42.BookLightfooted3,
+            item 1 SkillBookExpansionB42.BookLightfooted4,
+            item 1 SkillBookExpansionB42.BookLightfooted5,
+        }
+    }
+
+    craftRecipe ikop_pack_books_sbe_strength
+    {
+        timedAction = PackingBox,
+        time = 100,
+        OnCreate = IKOP_RecipeCode.onCreateBulkPack,
+        OnTest = IKOP_RecipeCode.canPackLooseSkillBook,
+        Tags = InHandCraft;Packing,
+        category = Packing,
+        inputs
+        {
+            item 1 [SkillBookExpansionB42.BookStrength1] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 1 [SkillBookExpansionB42.BookStrength2] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 1 [SkillBookExpansionB42.BookStrength3] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 1 [SkillBookExpansionB42.BookStrength4] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 1 [SkillBookExpansionB42.BookStrength5] flags[AllowFavorite;InheritFavorite;IsExclusive],
+        }
+        outputs
+        {
+            item 1 IKOP.BookStrengthSkillBundle,
+        }
+    }
+
+    craftRecipe ikop_unstack_books_sbe_strength
+    {
+        timedAction = UnPackBox,
+        time = 80,
+        Tags = InHandCraft;Packing;CanBeDoneInDark,
+        category = Packing,
+        inputs
+        {
+            item 1 [IKOP.BookStrengthSkillBundle] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 SkillBookExpansionB42.BookStrength1,
+            item 1 SkillBookExpansionB42.BookStrength2,
+            item 1 SkillBookExpansionB42.BookStrength3,
+            item 1 SkillBookExpansionB42.BookStrength4,
+            item 1 SkillBookExpansionB42.BookStrength5,
+        }
+    }
+
+    craftRecipe ikop_pack_books_sbe_fitness
+    {
+        timedAction = PackingBox,
+        time = 100,
+        OnCreate = IKOP_RecipeCode.onCreateBulkPack,
+        OnTest = IKOP_RecipeCode.canPackLooseSkillBook,
+        Tags = InHandCraft;Packing,
+        category = Packing,
+        inputs
+        {
+            item 1 [SkillBookExpansionB42.BookFitness1] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 1 [SkillBookExpansionB42.BookFitness2] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 1 [SkillBookExpansionB42.BookFitness3] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 1 [SkillBookExpansionB42.BookFitness4] flags[AllowFavorite;InheritFavorite;IsExclusive],
+            item 1 [SkillBookExpansionB42.BookFitness5] flags[AllowFavorite;InheritFavorite;IsExclusive],
+        }
+        outputs
+        {
+            item 1 IKOP.BookFitnessSkillBundle,
+        }
+    }
+
+    craftRecipe ikop_unstack_books_sbe_fitness
+    {
+        timedAction = UnPackBox,
+        time = 80,
+        Tags = InHandCraft;Packing;CanBeDoneInDark,
+        category = Packing,
+        inputs
+        {
+            item 1 [IKOP.BookFitnessSkillBundle] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 SkillBookExpansionB42.BookFitness1,
+            item 1 SkillBookExpansionB42.BookFitness2,
+            item 1 SkillBookExpansionB42.BookFitness3,
+            item 1 SkillBookExpansionB42.BookFitness4,
+            item 1 SkillBookExpansionB42.BookFitness5,
+        }
+    }
+
+}

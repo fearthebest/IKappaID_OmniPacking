@@ -1,0 +1,8 @@
+name=IKappaID's Omni Packing
+id=IKappaIDOmniPacking
+description=Bulk-pack vanilla materials into stacks of 5, 10, 25, 50, or 100. Skill book sets (Lv 1-5). Shelf-stable food bundles. Sandbox weight reduction and tier toggles. Multiplayer: server sets bundle weight; clients use synced items.
+author=IKappaID
+modversion=0.0.10
+versionMin=42.18
+category=Item
+tags=Build 42;QoL;Packing

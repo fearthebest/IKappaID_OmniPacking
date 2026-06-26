@@ -1,0 +1,171 @@
+module IKOP
+{
+
+    /* Skill Book Expansion (SkillBookExpansionB42): volumes 1-5 per skill */
+
+    item BookAxeSkillBundle
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = BookSlipcase,
+        IconColorMask = BookSlipcase_Mask,
+        WorldStaticModel = BookSlipcase,
+        ColorBlue = 38,
+        ColorGreen = 9,
+        ColorRed = 23,
+        Tags = ikop:bulk;base:ignorezombiedensity,
+        DoubleClickRecipe = ikop_unstack_books_sbe_axe,
+    }
+
+    item BookBluntSkillBundle
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = BookSlipcase,
+        IconColorMask = BookSlipcase_Mask,
+        WorldStaticModel = BookSlipcase,
+        ColorBlue = 210,
+        ColorGreen = 50,
+        ColorRed = 50,
+        Tags = ikop:bulk;base:ignorezombiedensity,
+        DoubleClickRecipe = ikop_unstack_books_sbe_long_blunt,
+    }
+
+    item BookSmallBluntSkillBundle
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = BookSlipcase,
+        IconColorMask = BookSlipcase_Mask,
+        WorldStaticModel = BookSlipcase,
+        ColorBlue = 210,
+        ColorGreen = 50,
+        ColorRed = 50,
+        Tags = ikop:bulk;base:ignorezombiedensity,
+        DoubleClickRecipe = ikop_unstack_books_sbe_short_blunt,
+    }
+
+    item BookSmallBladeSkillBundle
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = BookSlipcase,
+        IconColorMask = BookSlipcase_Mask,
+        WorldStaticModel = BookSlipcase,
+        ColorBlue = 210,
+        ColorGreen = 50,
+        ColorRed = 50,
+        Tags = ikop:bulk;base:ignorezombiedensity,
+        DoubleClickRecipe = ikop_unstack_books_sbe_short_blade,
+    }
+
+    item BookSpearSkillBundle
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = BookSlipcase,
+        IconColorMask = BookSlipcase_Mask,
+        WorldStaticModel = BookSlipcase,
+        ColorBlue = 210,
+        ColorGreen = 50,
+        ColorRed = 50,
+        Tags = ikop:bulk;base:ignorezombiedensity,
+        DoubleClickRecipe = ikop_unstack_books_sbe_spear,
+    }
+
+    item BookNimbleSkillBundle
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = BookSlipcase,
+        IconColorMask = BookSlipcase_Mask,
+        WorldStaticModel = BookSlipcase,
+        ColorBlue = 253,
+        ColorGreen = 162,
+        ColorRed = 206,
+        Tags = ikop:bulk;base:ignorezombiedensity,
+        DoubleClickRecipe = ikop_unstack_books_sbe_nimble,
+    }
+
+    item BookSneakingSkillBundle
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = BookSlipcase,
+        IconColorMask = BookSlipcase_Mask,
+        WorldStaticModel = BookSlipcase,
+        ColorBlue = 210,
+        ColorGreen = 50,
+        ColorRed = 50,
+        Tags = ikop:bulk;base:ignorezombiedensity,
+        DoubleClickRecipe = ikop_unstack_books_sbe_sneaking,
+    }
+
+    item BookSprintingSkillBundle
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = BookSlipcase,
+        IconColorMask = BookSlipcase_Mask,
+        WorldStaticModel = BookSlipcase,
+        ColorBlue = 210,
+        ColorGreen = 50,
+        ColorRed = 50,
+        Tags = ikop:bulk;base:ignorezombiedensity,
+        DoubleClickRecipe = ikop_unstack_books_sbe_sprinting,
+    }
+
+    item BookLightfootedSkillBundle
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = BookSlipcase,
+        IconColorMask = BookSlipcase_Mask,
+        WorldStaticModel = BookSlipcase,
+        ColorBlue = 10,
+        ColorGreen = 220,
+        ColorRed = 10,
+        Tags = ikop:bulk;base:ignorezombiedensity,
+        DoubleClickRecipe = ikop_unstack_books_sbe_lightfooted,
+    }
+
+    item BookStrengthSkillBundle
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = BookSlipcase,
+        IconColorMask = BookSlipcase_Mask,
+        WorldStaticModel = BookSlipcase,
+        ColorBlue = 9,
+        ColorGreen = 23,
+        ColorRed = 38,
+        Tags = ikop:bulk;base:ignorezombiedensity,
+        DoubleClickRecipe = ikop_unstack_books_sbe_strength,
+    }
+
+    item BookFitnessSkillBundle
+    {
+        DisplayCategory = SkillBook,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = BookSlipcase,
+        IconColorMask = BookSlipcase_Mask,
+        WorldStaticModel = BookSlipcase,
+        ColorBlue = 210,
+        ColorGreen = 50,
+        ColorRed = 50,
+        Tags = ikop:bulk;base:ignorezombiedensity,
+        DoubleClickRecipe = ikop_unstack_books_sbe_fitness,
+    }
+
+}
