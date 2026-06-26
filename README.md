@@ -1,63 +1,80 @@
 # IKappaID's Omni Packing
 
-Project Zomboid **Build 42** mod: bulk-pack vanilla materials, shelf-stable food, magazines, and skill book sets into stacks of **5, 10, 25, 50, or 100**.
+Bulk-pack vanilla materials, shelf-stable food, magazines, and skill book sets into stacks of 5, 10, 25, 50, or 100 for Project Zomboid Build 42.
 
 | | |
 |---|---|
 | **Mod ID** | `IKappaIDOmniPacking` |
-| **Target build** | B42.18+ (tested on 42.19) |
 | **Version** | 0.0.10 |
+| **Target build** | B42.18+ (tested on 42.19) |
+| **Author** | IKappaID |
+
+## Overview
+
+Omni Packing adds tiered bundle items for loose `Base.*` materials and food, vanilla 24-skill slipcases, and optional Skill Book Expansion integration. Sandbox options control weight reduction, enabled tiers, and pack/unpack timing.
 
 ## Features
 
-- ~970 packable loose `Base.*` types (materials + food) across five stack tiers
-- Vanilla **24 skill** slipcases (Lv 1–5 per set)
+- Approximately 970 packable loose `Base.*` types across five stack tiers
+- Vanilla 24-skill slipcases (levels 1–5 per set)
 - Optional addon: **IKappaIDOmniPacking_SkillBookExpansion** ([Skill Book Expansion](https://steamcommunity.com/sharedfiles/filedetails/?id=3557111695))
-- Sandbox weight reduction, tier toggles, pack/unpack timing
-- MP: server sets bundle weight; clients use synced items ([docs/MP_AUTHORITY.md](docs/MP_AUTHORITY.md))
+- Multiplayer: server sets bundle weight; clients use synced items ([docs/MP_AUTHORITY.md](docs/MP_AUTHORITY.md))
 
-## Install (players)
+## Repository structure
 
-Copy `Contents/mods/IKappaIDOmniPacking` into your Zomboid mods folder, or subscribe on Steam Workshop when published.
+```text
+.
+├── README.md
+├── workshop.txt
+├── Contents/
+│   └── mods/
+│       ├── IKappaIDOmniPacking/42.18/              # Main mod
+│       └── IKappaIDOmniPacking_SkillBookExpansion/42.18/  # Optional addon
+├── scripts/           # Python generators and catalog sources
+├── docs/              # Scope, testing, and MP notes
+└── art/icons/         # Icon previews (not loaded by the game)
+```
+
+## Installation (players)
+
+Copy `Contents/mods/IKappaIDOmniPacking` into your Zomboid mods folder, or subscribe on Steam Workshop when published. Enable the Skill Book Expansion addon only if that dependency mod is present.
 
 ## Development
 
-### Layout
-
-```
-Contents/mods/IKappaIDOmniPacking/42.18/     # main mod (Lua, scripts, textures)
-Contents/mods/IKappaIDOmniPacking_SkillBookExpansion/42.18/  # optional addon
-scripts/          # Python generators and catalog sources
-docs/             # scope, testing, MP notes
-art/icons/        # icon previews (not loaded by the game)
-```
-
-### Regenerate item/recipe scripts
+**Regenerate item and recipe scripts:**
 
 ```powershell
 python scripts/generate_scripts.py
-python scripts/generate_scripts_sbe.py   # Skill Book Expansion addon
+python scripts/generate_scripts_sbe.py
 ```
 
-### Validate catalog against vanilla items
+**Validate catalog against vanilla items:**
 
 ```powershell
 python scripts/validate_catalog.py "C:\Path\To\ProjectZomboid\media\scripts\generated\items"
 ```
 
-### Sync to Steam Workshop upload tree
+**Sync to Steam Workshop upload tree:**
 
 ```powershell
 powershell -File scripts/sync_to_workshop.ps1
 ```
 
-## Docs
+## Documentation
 
-- [SCOPE.md](docs/SCOPE.md) — pack rules and material list overview
-- [TESTING.md](docs/TESTING.md) — playtest checklist
-- [MP_AUTHORITY.md](docs/MP_AUTHORITY.md) — multiplayer weight authority
-- [FOR-SBE-ADDON.md](docs/FOR-SBE-ADDON.md) — Skill Book Expansion addon
+| Document | Description |
+|----------|-------------|
+| [SCOPE.md](docs/SCOPE.md) | Pack rules and material list overview |
+| [TESTING.md](docs/TESTING.md) | Playtest checklist |
+| [MP_AUTHORITY.md](docs/MP_AUTHORITY.md) | Multiplayer weight authority |
+| [FOR-SBE-ADDON.md](docs/FOR-SBE-ADDON.md) | Skill Book Expansion addon |
 
 ## License
 
 All rights reserved unless a `LICENSE` file is added later.
+
+## Links
+
+- **Support:** https://ko-fi.com/ikappaid
+
+Community mod — not affiliated with or endorsed by The Indie Stone.
