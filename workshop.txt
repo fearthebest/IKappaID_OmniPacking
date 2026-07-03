@@ -1,5 +1,5 @@
 version=1
-id=0
-title=IKappaID's Omni Packing (dev — not published)
-description=Bulk-pack vanilla materials, food, and skill books. Publish from Zomboid Workshop folder after sync_to_workshop.ps1.
+title=IKappaID Omni Packing
+description=Bulk-pack vanilla materials, shelf-stable food, magazines, and skill book sets into stacks of 5, 10, 25, 50, or 100. Sandbox weight reduction, tier toggles, and MP-safe bundle weights.
+tags=Build 42;Items;QoL;Packing;Multiplayer
 visibility=private

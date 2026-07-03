@@ -75,9 +75,19 @@ function IKOP_ContextMenu.sortRecipeList(recipeList)
         elseif sizeB then
             return false
         end
-        local nameA = a:getName()
-        local nameB = b:getName()
-        if Translator and Translator.getRecipeName and string.sort then
+        local nameA
+        local nameB
+        if type(a.getName) == "function" then
+            nameA = a:getName()
+        else
+            nameA = ""
+        end
+        if type(b.getName) == "function" then
+            nameB = b:getName()
+        else
+            nameB = ""
+        end
+        if Translator and type(Translator.getRecipeName) == "function" and string.sort then
             return string.sort(Translator.getRecipeName(nameA), Translator.getRecipeName(nameB))
         end
         return nameA < nameB
@@ -91,7 +101,8 @@ function IKOP_ContextMenu.sortRecipeList(recipeList)
 end
 
 local function installContextMenuSort()
-    if not ISInventoryPaneContextMenu or not ISInventoryPaneContextMenu.addNewCraftingDynamicalContextMenu then
+    if not ISInventoryPaneContextMenu
+        or type(ISInventoryPaneContextMenu.addNewCraftingDynamicalContextMenu) ~= "function" then
         return
     end
     if ISInventoryPaneContextMenu.IKOP_addNewCraftingDynamicalContextMenu then

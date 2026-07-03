@@ -2,10 +2,13 @@
   Apply pack/unpack recipe times from sandbox multipliers (OnGameStart + sandbox changes).
 ]]
 
+require "IKOP_Core"
 require "IKOP_Sandbox"
-require "IKOP_MP"
+require "IKOP_Authority"
 
 IKOP_RecipeTuning = IKOP_RecipeTuning or {}
+
+local AUTH = IKOP_Authority
 
 local function stackSizeFromRecipeName(name)
     if type(name) ~= "string" then
@@ -20,13 +23,13 @@ local function setRecipeTime(recipe, ticks)
         return
     end
     ticks = math.max(1, math.floor(ticks + 0.5))
-    if recipe.setTime then
+    if recipe and type(recipe.setTime) == "function" then
         recipe:setTime(ticks)
     end
 end
 
 local function tuneRecipe(recipe)
-    if not recipe or not recipe.getName then
+    if not recipe or type(recipe.getName) ~= "function" then
         return
     end
     local name = recipe:getName()
@@ -60,10 +63,10 @@ local function tuneRecipe(recipe)
 end
 
 function IKOP_RecipeTuning.applyAll()
-    if not IKOP_MP.isAuthority() then
+    if not AUTH.guardServerMutate() then
         return
     end
-    if not CraftRecipeManager or not CraftRecipeManager.getRecipe then
+    if not CraftRecipeManager or type(CraftRecipeManager.getRecipe) ~= "function" then
         return
     end
 
@@ -77,12 +80,12 @@ function IKOP_RecipeTuning.applyAll()
         tuneRecipe(CraftRecipeManager.getRecipe(names[i]))
     end
 
-    if CraftRecipeManager.getAllRecipes then
+    if type(CraftRecipeManager.getAllRecipes) == "function" then
         local all = CraftRecipeManager.getAllRecipes()
         if all then
             for j = 0, all:size() - 1 do
                 local recipe = all:get(j)
-                if recipe and recipe.getName then
+                if recipe and type(recipe.getName) == "function" then
                     local name = recipe:getName()
                     if type(name) == "string" and string.sub(name, 1, 4) == "ikop" then
                         tuneRecipe(recipe)

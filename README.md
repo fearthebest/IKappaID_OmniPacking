@@ -1,4 +1,4 @@
-# IKappaID's Omni Packing
+# IKappaID Omni Packing
 
 Bulk-pack vanilla materials, shelf-stable food, magazines, and skill book sets into stacks of 5, 10, 25, 50, or 100 for Project Zomboid Build 42.
 
@@ -19,6 +19,7 @@ Omni Packing adds tiered bundle items for loose `Base.*` materials and food, van
 - Vanilla 24-skill slipcases (levels 1–5 per set)
 - Optional addon: **IKappaIDOmniPacking_SkillBookExpansion** ([Skill Book Expansion](https://steamcommunity.com/sharedfiles/filedetails/?id=3557111695))
 - Multiplayer: server sets bundle weight; clients use synced items ([docs/MP_AUTHORITY.md](docs/MP_AUTHORITY.md))
+- Structured logging: `IKOP_Log.lua` writes to `console.txt` and `Zomboid/Lua/IKappaIDOmniPacking/logs/{client|server}/*.log` (toggle in `IKOP_Config.lua`)
 
 ## Repository structure
 
@@ -28,7 +29,7 @@ Omni Packing adds tiered bundle items for loose `Base.*` materials and food, van
 ├── workshop.txt
 ├── Contents/
 │   └── mods/
-│       ├── IKappaIDOmniPacking/42.18/              # Main mod
+│       ├── IKappaIDOmniPacking/42.18/              # Main mod (Core, Authority, Log, RecipeCode, …)
 │       └── IKappaIDOmniPacking_SkillBookExpansion/42.18/  # Optional addon
 ├── scripts/           # Python generators and catalog sources
 ├── docs/              # Scope, testing, and MP notes

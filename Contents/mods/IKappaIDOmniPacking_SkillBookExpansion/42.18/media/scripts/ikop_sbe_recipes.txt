@@ -7,7 +7,7 @@ module IKOP
         time = 100,
         OnCreate = IKOP_RecipeCode.onCreateBulkPack,
         OnTest = IKOP_RecipeCode.canPackLooseSkillBook,
-        Tags = InHandCraft;Packing,
+        Tags = InHandCraft;CanBeDoneFromFloor;Packing,
         category = Packing,
         inputs
         {
@@ -27,6 +27,7 @@ module IKOP
     {
         timedAction = UnPackBox,
         time = 80,
+        OnTest = IKOP_RecipeCode.canUnstackSkillBookSet,
         Tags = InHandCraft;Packing;CanBeDoneInDark,
         category = Packing,
         inputs
@@ -49,7 +50,7 @@ module IKOP
         time = 100,
         OnCreate = IKOP_RecipeCode.onCreateBulkPack,
         OnTest = IKOP_RecipeCode.canPackLooseSkillBook,
-        Tags = InHandCraft;Packing,
+        Tags = InHandCraft;CanBeDoneFromFloor;Packing,
         category = Packing,
         inputs
         {
@@ -69,6 +70,7 @@ module IKOP
     {
         timedAction = UnPackBox,
         time = 80,
+        OnTest = IKOP_RecipeCode.canUnstackSkillBookSet,
         Tags = InHandCraft;Packing;CanBeDoneInDark,
         category = Packing,
         inputs
@@ -91,7 +93,7 @@ module IKOP
         time = 100,
         OnCreate = IKOP_RecipeCode.onCreateBulkPack,
         OnTest = IKOP_RecipeCode.canPackLooseSkillBook,
-        Tags = InHandCraft;Packing,
+        Tags = InHandCraft;CanBeDoneFromFloor;Packing,
         category = Packing,
         inputs
         {
@@ -111,6 +113,7 @@ module IKOP
     {
         timedAction = UnPackBox,
         time = 80,
+        OnTest = IKOP_RecipeCode.canUnstackSkillBookSet,
         Tags = InHandCraft;Packing;CanBeDoneInDark,
         category = Packing,
         inputs
@@ -133,7 +136,7 @@ module IKOP
         time = 100,
         OnCreate = IKOP_RecipeCode.onCreateBulkPack,
         OnTest = IKOP_RecipeCode.canPackLooseSkillBook,
-        Tags = InHandCraft;Packing,
+        Tags = InHandCraft;CanBeDoneFromFloor;Packing,
         category = Packing,
         inputs
         {
@@ -153,6 +156,7 @@ module IKOP
     {
         timedAction = UnPackBox,
         time = 80,
+        OnTest = IKOP_RecipeCode.canUnstackSkillBookSet,
         Tags = InHandCraft;Packing;CanBeDoneInDark,
         category = Packing,
         inputs
@@ -175,7 +179,7 @@ module IKOP
         time = 100,
         OnCreate = IKOP_RecipeCode.onCreateBulkPack,
         OnTest = IKOP_RecipeCode.canPackLooseSkillBook,
-        Tags = InHandCraft;Packing,
+        Tags = InHandCraft;CanBeDoneFromFloor;Packing,
         category = Packing,
         inputs
         {
@@ -195,6 +199,7 @@ module IKOP
     {
         timedAction = UnPackBox,
         time = 80,
+        OnTest = IKOP_RecipeCode.canUnstackSkillBookSet,
         Tags = InHandCraft;Packing;CanBeDoneInDark,
         category = Packing,
         inputs
@@ -217,7 +222,7 @@ module IKOP
         time = 100,
         OnCreate = IKOP_RecipeCode.onCreateBulkPack,
         OnTest = IKOP_RecipeCode.canPackLooseSkillBook,
-        Tags = InHandCraft;Packing,
+        Tags = InHandCraft;CanBeDoneFromFloor;Packing,
         category = Packing,
         inputs
         {
@@ -237,6 +242,7 @@ module IKOP
     {
         timedAction = UnPackBox,
         time = 80,
+        OnTest = IKOP_RecipeCode.canUnstackSkillBookSet,
         Tags = InHandCraft;Packing;CanBeDoneInDark,
         category = Packing,
         inputs
@@ -259,7 +265,7 @@ module IKOP
         time = 100,
         OnCreate = IKOP_RecipeCode.onCreateBulkPack,
         OnTest = IKOP_RecipeCode.canPackLooseSkillBook,
-        Tags = InHandCraft;Packing,
+        Tags = InHandCraft;CanBeDoneFromFloor;Packing,
         category = Packing,
         inputs
         {
@@ -279,6 +285,7 @@ module IKOP
     {
         timedAction = UnPackBox,
         time = 80,
+        OnTest = IKOP_RecipeCode.canUnstackSkillBookSet,
         Tags = InHandCraft;Packing;CanBeDoneInDark,
         category = Packing,
         inputs
@@ -301,7 +308,7 @@ module IKOP
         time = 100,
         OnCreate = IKOP_RecipeCode.onCreateBulkPack,
         OnTest = IKOP_RecipeCode.canPackLooseSkillBook,
-        Tags = InHandCraft;Packing,
+        Tags = InHandCraft;CanBeDoneFromFloor;Packing,
         category = Packing,
         inputs
         {
@@ -321,6 +328,7 @@ module IKOP
     {
         timedAction = UnPackBox,
         time = 80,
+        OnTest = IKOP_RecipeCode.canUnstackSkillBookSet,
         Tags = InHandCraft;Packing;CanBeDoneInDark,
         category = Packing,
         inputs
@@ -343,7 +351,7 @@ module IKOP
         time = 100,
         OnCreate = IKOP_RecipeCode.onCreateBulkPack,
         OnTest = IKOP_RecipeCode.canPackLooseSkillBook,
-        Tags = InHandCraft;Packing,
+        Tags = InHandCraft;CanBeDoneFromFloor;Packing,
         category = Packing,
         inputs
         {
@@ -363,6 +371,7 @@ module IKOP
     {
         timedAction = UnPackBox,
         time = 80,
+        OnTest = IKOP_RecipeCode.canUnstackSkillBookSet,
         Tags = InHandCraft;Packing;CanBeDoneInDark,
         category = Packing,
         inputs
@@ -385,7 +394,7 @@ module IKOP
         time = 100,
         OnCreate = IKOP_RecipeCode.onCreateBulkPack,
         OnTest = IKOP_RecipeCode.canPackLooseSkillBook,
-        Tags = InHandCraft;Packing,
+        Tags = InHandCraft;CanBeDoneFromFloor;Packing,
         category = Packing,
         inputs
         {
@@ -405,6 +414,7 @@ module IKOP
     {
         timedAction = UnPackBox,
         time = 80,
+        OnTest = IKOP_RecipeCode.canUnstackSkillBookSet,
         Tags = InHandCraft;Packing;CanBeDoneInDark,
         category = Packing,
         inputs
@@ -427,7 +437,7 @@ module IKOP
         time = 100,
         OnCreate = IKOP_RecipeCode.onCreateBulkPack,
         OnTest = IKOP_RecipeCode.canPackLooseSkillBook,
-        Tags = InHandCraft;Packing,
+        Tags = InHandCraft;CanBeDoneFromFloor;Packing,
         category = Packing,
         inputs
         {
@@ -447,6 +457,7 @@ module IKOP
     {
         timedAction = UnPackBox,
         time = 80,
+        OnTest = IKOP_RecipeCode.canUnstackSkillBookSet,
         Tags = InHandCraft;Packing;CanBeDoneInDark,
         category = Packing,
         inputs

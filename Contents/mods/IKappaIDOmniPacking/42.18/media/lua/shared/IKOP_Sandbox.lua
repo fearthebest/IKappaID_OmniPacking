@@ -142,7 +142,7 @@ end
 
 ---@param looseWeight number|nil weight of one loose unit before stacking multiplier
 function IKOP_Sandbox.getWeightReductionFractionForBulk(item, looseWeight)
-    if not item or not item.getFullType then
+    if not item or type(item.getFullType) ~= "function" then
         return IKOP_Sandbox.getMaterialsWeightReductionPercent() / 100.0
     end
 
@@ -153,7 +153,10 @@ function IKOP_Sandbox.getWeightReductionFractionForBulk(item, looseWeight)
         end
     end
 
-    local category = item.getDisplayCategory and item:getDisplayCategory()
+    local category
+    if type(item.getDisplayCategory) == "function" then
+        category = item:getDisplayCategory()
+    end
     if category == "Food" then
         return IKOP_Sandbox.getFoodWeightReductionPercent() / 100.0
     end
@@ -165,7 +168,7 @@ function IKOP_Sandbox.getWeightReductionFractionForBulk(item, looseWeight)
     local extra = IKOP_Sandbox.getHeavyItemExtraReductionPercent()
     if extra > 0 and type(looseWeight) == "number" and looseWeight > 0 then
         local perUnit = looseWeight
-        if item.getCount then
+        if type(item.getCount) == "function" then
             local count = item:getCount()
             if type(count) == "number" and count > 0 then
                 perUnit = looseWeight / count
