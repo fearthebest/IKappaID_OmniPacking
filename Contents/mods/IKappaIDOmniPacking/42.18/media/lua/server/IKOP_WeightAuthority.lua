@@ -495,6 +495,42 @@ local function onTickSandboxCheck()
     onSandboxOptionsMaybeChanged()
 end
 
+local weightScanTicks = 0
+local WEIGHT_SCAN_INTERVAL = 60
+
+local function getOpenedContainerForLocalPlayer()
+    if not ISInventoryPage or not ISInventoryPage.getContainers then
+        return nil
+    end
+    if not getPlayer then
+        return nil
+    end
+    local playerObj = getPlayer()
+    if not playerObj or not playerObj.getPlayerNum then
+        return nil
+    end
+    local page = ISInventoryPage.getContainers(playerObj:getPlayerNum())
+    if not page or not page.getInventory then
+        return nil
+    end
+    return page:getInventory()
+end
+
+local function onTickBulkWeightScan()
+    if not AUTH.guardServerMutate() then
+        return
+    end
+    weightScanTicks = weightScanTicks + 1
+    if weightScanTicks % WEIGHT_SCAN_INTERVAL ~= 0 then
+        return
+    end
+    restoreOnlinePlayerBulkWeights()
+    local opened = getOpenedContainerForLocalPlayer()
+    if opened then
+        restoreContainerBulkWeights(opened, nil)
+    end
+end
+
 if Events then
     if Events.OnGameStart then
         Events.OnGameStart.Add(function()
@@ -527,6 +563,7 @@ if Events then
     end
     if Events.OnTick then
         Events.OnTick.Add(onTickSandboxCheck)
+        Events.OnTick.Add(onTickBulkWeightScan)
     end
 end
 
